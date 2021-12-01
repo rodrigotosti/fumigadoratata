@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.cursor-pointer{
+    cursor: pointer !important;
+  }
+
+#hero-section{
+    height: 92vh;
+}
+.section{
+    height: 100vh;
+}
+
+#first {
+    background-color: aquamarine;
+}
+
+#seccond {
+    background-color: rgb(111, 243, 199);
+}
+
+#third {
+    background-color: rgb(83, 250, 194);
+}
+
+#forth {
+    background-color: rgb(42, 224, 164);
+}
+
+#fifth {
+    background-color: rgb(23, 80, 61);
+}
+
+#sixth {
+    background-color: rgb(24, 88, 67);
+}
+
+#seventh {
+    background-color: rgb(10, 53, 39);
+}
