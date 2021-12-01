@@ -35,8 +35,9 @@ html {
 
 #sixth {
     background-color: rgb(24, 88, 67);
+    height: 50vh !important;
 }
 
 #seventh {
-    background-color: rgb(10, 53, 39);
+    background-color: rgb(154, 214, 194);
 }
