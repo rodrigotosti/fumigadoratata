@@ -6,23 +6,54 @@ html {
     cursor: pointer !important;
   }
 
+.main-color {
+    background-color: #5FD9FC;
+}
+
+.main-color-text {
+    color: #5FD9FC;
+}
+
+.hidden-text-color {
+    color: #acc2c8;
+} 
+
+.subtitle-color {
+    color:#999c9f;
+}
+
 #hero-section{
     height: 92vh;
+    padding: 10%;
+    background: url(images/smoke.jpg) no-repeat center center;
+
 }
 .section{
     height: 100vh;
 }
 
 #first {
-    background-color: aquamarine;
+    background-color: #D0EDF5;
+    padding: 10%;
 }
 
 #seccond {
-    background-color: rgb(111, 243, 199);
+    background-color: #81C4D6;
+    padding: 10%;
 }
 
 #third {
-    background-color: rgb(83, 250, 194);
+    background-color: #017291;
+    display: flex;
+}
+
+.carousel-inner-custom {
+    height: 100%;
+    padding: 9%;
+}
+
+.carousel-inner-custom-description {
+    font-size: large;
 }
 
 #forth {
@@ -40,4 +71,5 @@ html {
 
 #seventh {
     background-color: rgb(154, 214, 194);
+    padding: 10%;
 }
