@@ -17,19 +17,27 @@ html {
 .hidden-text-color {
     color: #acc2c8;
 } 
+.wp-button {
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 24px;
+    right: 15px;
+    background: url(images/whatsapp-round-color.svg) no-repeat center center;
+
+}
 
 .subtitle-color {
     color:#999c9f;
 }
 
 #hero-section{
-    height: 92vh;
+    min-height: 92vh;
     padding: 10%;
-    background: url(images/smoke.jpg) no-repeat center center;
-
+    background-color: antiquewhite;
 }
 .section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #first {
