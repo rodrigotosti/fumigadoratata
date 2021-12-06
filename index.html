@@ -204,33 +204,33 @@
 
                 <div class="row justify-content-center">
                     <div class="mb-3 col-12">
-                        <input class="form-control" id="inputName" placeholder="Nombre o empresa">
+                        <input class="form-control" id="contactName" placeholder="Nombre o empresa">
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="mb-3 col-12">
-                        <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                        <input type="email" class="form-control" id="contactEmail" placeholder="Email">
                     </div>
                 </div>
                 <div class=" row justify-content-center">
                     <div class="mb-3 col-12">
-                        <input type="number" class="form-control" id="inputPhone" placeholder="Teléfono">
+                        <input type="number" class="form-control" id="contactPhone" placeholder="Teléfono">
                     </div>
                 </div>
                 <div class=" row justify-content-center">
                     <div class="mb-3 col-12">
-                        <input class="form-control" id="asunto" placeholder="Asunto">
+                        <input class="form-control" id="contactSubject" placeholder="Asunto">
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="mb-3 col-12">
-                        <textarea class="form-control" id="formControlTextarea" placeholder="Contenido"
+                        <textarea class="form-control" id="contactForm" placeholder="Contenido"
                             rows="10"></textarea>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="mb-3 col-12 d-flex justify-content-end">
-                        <button onclick="sendMail()" class="btn btn-primary w-100">Enviar</button>
+                        <button id="contactSend" onclick="sendMail(event);" class="btn btn-primary w-100">Enviar</button>
                     </div>
                 </div>
 
@@ -259,30 +259,61 @@
 
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
-        function sendMail() {
+        function sendMail(e) {
+            e.preventDefault()
             emailjs.init("user_k9KhQUGOTtAdcePxg0hp0");
+            let contactName = document.getElementById("contactName").value;   
+            let contactEmail = document.getElementById("contactEmail").value;
+            let contactPhone = document.getElementById("contactPhone").value;
+            let contactSubject = document.getElementById("contactSubject").value;
+            let contactForm = document.getElementById("contactForm").value;
+
+            if(!contactName){
+                return swal("Complete el nombre!");
+            }
+            
+            if(!contactEmail){
+                return swal("Complete el mail!");
+            }
+            
+            if(!contactPhone){
+                return swal("Complete el telefono!");
+            }
+            
+            if(!contactSubject){
+                return swal("Complete el asunto!");
+            }
+            
+            if(!contactForm){
+                return swal("Complete el mensaje!");
+            }
+
+            const subject = `${contactName} - ${contactSubject}`
+            const message = `${contactForm} \n \n DATOS DE CONTACTO: \n NOMBRE: ${contactName} \n TELEFONO: ${contactPhone} \n EMAIL: ${contactEmail}`
+
             var templateParams = {
-                subject: 'test presupuesto',
-                message: 'testt de mensaje',
-                fromEmail: 'nicolas.rodriguezlb@gmail.com', // chequear esto
+                subject,
+                message,
+                fromEmail: contactEmail,
                 toEmail: 'rodrigo.tosti98@gmail.com' //aca va a ir hardcodeado fumigadoradeltata@gmail.com
             };
 
-            emailjs
-                .send(
-                    "default_service",
-                    "template_contacto",
-                    templateParams
-                )
-                .then(
-                    function (response) {
-                        console.log("SUCCESS!", response.status, response.text);
-                    },
-                    function (error) {
-                        console.log("FAILED...", error);
-                    }
-                );
+            // emailjs
+            //     .send(
+            //         "default_service",
+            //         "template_contacto",
+            //         templateParams
+            //     )
+            //     .then(
+            //         function (response) {
+            //             console.log("SUCCESS!", response.status, response.text);
+            //         },
+            //         function (error) {
+            //             console.log("FAILED...", error);
+            //         }
+            //     );
         };
     </script>
     </script>
