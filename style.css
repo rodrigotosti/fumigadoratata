@@ -2,6 +2,13 @@ html {
     scroll-behavior: smooth;
   }
 
+.service-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
 .cursor-pointer{
     cursor: pointer !important;
   }
@@ -17,6 +24,28 @@ html {
 .hidden-text-color {
     color: #acc2c8;
 } 
+
+.header-img {
+    background: url(images/header.png) no-repeat center;
+    background-size: 264px;
+    height: 140px;
+}
+
+.desinfeccion {
+    background: url(images/mosquito.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.desratacion {
+    background: url(images/rat.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.limpieza {
+    background: url(images/aspiradora.png) no-repeat bottom;
+    background-size: contain;
+}
+
 .wp-button {
     height: 70px;
     width: 70px;
@@ -34,6 +63,7 @@ html {
 #hero-section{
     min-height: 92vh;
     padding: 10%;
+    padding-top: 14%;
     background-color: antiquewhite;
 }
 .section{
@@ -43,16 +73,20 @@ html {
 #first {
     background-color: #D0EDF5;
     padding: 10%;
+    padding-top: 14%;
 }
 
 #seccond {
     background-color: #81C4D6;
     padding: 10%;
+    padding-top: 14%;
 }
 
 #third {
     background-color: #017291;
     display: flex;
+    flex-direction: column;
+    padding-top: 14%;
 }
 
 .carousel-inner-custom {
@@ -66,6 +100,7 @@ html {
 
 #forth {
     background-color: rgb(42, 224, 164);
+    padding-top: 14%;
 }
 
 #fifth {
@@ -75,9 +110,12 @@ html {
 #sixth {
     background-color: rgb(24, 88, 67);
     height: 50vh !important;
+    
 }
 
 #seventh {
     background-color: rgb(154, 214, 194);
     padding: 10%;
+    padding-top: 14%;
+    
 }
