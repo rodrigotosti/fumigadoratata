@@ -64,29 +64,40 @@ html {
     min-height: 92vh;
     padding: 10%;
     padding-top: 14%;
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    background: url(images/fumigacion.png) no-repeat;
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: center;
+    background-color: #f2f2f2;
 }
 .section{
     min-height: 100vh;
 }
 
 #first {
-    background-color: #D0EDF5;
+    background-color: #fafafa;
     padding: 10%;
     padding-top: 14%;
+    min-height: 60vh;
 }
 
 #seccond {
     background-color: #81C4D6;
     padding: 10%;
-    padding-top: 14%;
+    padding-top: 8%;
+    min-height: 60vh;
+
 }
 
 #third {
     background-color: #017291;
     display: flex;
     flex-direction: column;
-    padding-top: 14%;
+    padding-top: 8%;
 }
 
 .carousel-inner-custom {
@@ -108,14 +119,18 @@ html {
 }
 
 #sixth {
-    background-color: rgb(24, 88, 67);
-    height: 50vh !important;
-    
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-evenly;
 }
 
 #seventh {
-    background-color: rgb(154, 214, 194);
-    padding: 10%;
-    padding-top: 14%;
-    
+    background-color: #f2f2f2;
+    min-height: 80vh;
+}
+
+#contact-nav {
+    padding-top: 8%;
 }

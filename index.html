@@ -22,7 +22,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="nav">
                     <li class="nav-item">
                         <a onclick="showIt('first')" class="nav-link cursor-pointer" aria-current="page">Bienvenidos</a>
@@ -34,7 +34,7 @@
                         <a onclick="showIt('third')" class="nav-link cursor-pointer">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a onclick="showIt('seventh')" type="button" class="nav-link cursor-pointer">Contacto</a>
+                        <a onclick="showIt('contact-nav')" type="button" class="nav-link cursor-pointer">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -48,16 +48,17 @@
             <h3>Limpieza Y Desinfección De Tanques - Cañerías</h3>
             <h3>Muestra De Agua</h3>
         </div>
-        <div class="section" id="first">
-            <span class="hidden-text-color">Fumigadora del Tata</span>
-            <h1 style="font-size: 282%; margin-bottom: 30px;">Bienvenidos</h1>
+        <div class="section" id="first">            
+            <h1 style="font-size: 300%; margin-bottom: 30px; text-align: center;">Bienvenidos</h1>
 
-            <p>Fumigadora Del Tata es una empresa joven, en desarrollo y con un nuevo enfoque en la prestación de
-                servicios de sanidad ambiental. Para llevar a cabo nuestros objetivos cumplimos un estricto
-                procedimiento de aplicación de diversos productos el cual lleva, en la mayoría de casos , a la reducción
-                mínima de la plaga o erradicación de la misma, este procedimiento es el <b>M.I.P</b> (manejo integral de
-                plagas).</p>
-            <span class="hidden-text-color">Fumigadora del Tata</span>
+            <p style="font-size: 150%;">Fumigadora Del Tata es una empresa joven, en desarrollo y con un nuevo enfoque en la prestación de
+                servicios de sanidad ambiental.</p>
+            <p style="font-size: 150%;">Para llevar a cabo nuestros objetivos cumplimos un estricto
+                    procedimiento de aplicación de diversos productos el cual lleva, en la mayoría de casos , a la reducción
+                    mínima de la plaga o erradicación de la misma, este procedimiento es el <b>M.I.P</b> (manejo integral de
+                    plagas).</p>    
+
+            <!-- <span class="hidden-text-color">Fumigadora del Tata</span>
             <h1 style="font-size: 282%; margin-bottom: 30px; ">M.I.P</h1>
 
             <p>El M.I.P es una estrategia que usa una gran variedad de métodos complementarios: físicos, mecánicos,
@@ -69,16 +70,15 @@
                 erradicación completa de una plaga es a menudo imposible y que intentarlo puede ser sumamente costoso,
                 insalubre y en general irrealizable. Es mejor decidir cual es el nivel tolerable de una plaga y aplicar
                 controles cuando se excede ese nivel (umbral de acción).
-            </p>
+            </p> -->
         </div>
         <div class="section" id="seccond">
-            <span class="hidden-text-color">Fumigadora del Tata</span>
-            <h1 style="font-size: 282%; margin-bottom: 30px; ">Objetivo</h1>
-            <p style="font-size: larger;">Hoy nuestra intención es que su organización pase a formar parte de nuestro
+            <h1 style="font-size: 300%; margin-bottom: 30px; text-align: center; ">Nosotros</h1>
+            <p style="font-size: 150%;">Hoy nuestra intención es que su organización pase a formar parte de nuestro
                 listado de clientes. Es
                 por eso que le acercamos esta notificación con la intención de que conozcan nuestro perfil y nuestra
                 empresa en profundidad, y así poder decidir si formaremos o no parte de sus proveedores.</p>
-            <p style="font-size: larger;">Tenemos el agrado de dirigirnos a Uds., a efectos de ponerle en conocimiento y
+            <p style="font-size: 150%;">Tenemos el agrado de dirigirnos a Uds., a efectos de ponerle en conocimiento y
                 en detalle la metodología
                 a llevar a cabo en cada una de las aplicaciones a realizar en vuestro establecimiento, donde
                 realizaremos nuestros servicios.
@@ -89,48 +89,42 @@
         <div class="section" id="third">
             <div class="service-buttons">
 
-
                 <div style="display: flex; flex-direction: column;">
                     <div class="desinfeccion" style="height: 60px; margin-bottom: 10px;"></div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal1">
                         DESINFECCIÓN – DESINSECTACION
                     </button>
                 </div>
 
                 <div style="display: flex; flex-direction: column;">
                     <div class="desratacion" style="height: 60px; margin-bottom: 10px;"></div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2">
                         DESRATIZACION
                     </button>
                 </div>
                 <div style="display: flex; flex-direction: column;">
                     <div class="limpieza" style="height: 60px; margin-bottom: 10px;">
                     </div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal3">
                         LIMPIEZA
                     </button>
                 </div>
-
-
-
-
-
             </div>
 
             <div class="service-buttons">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" ">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" ">
                     Bicho taladro
                 </button>
 
-                <button type=" button" class="btn btn-primary" data-bs-toggle="modal" ">
+                <button type=" button" class="btn btn-danger" data-bs-toggle="modal" ">
                     Fumigacion Por Mosquitos
                 </button>
 
-                <button type=" button" class="btn btn-primary" data-bs-toggle="modal" ">
+                <button type=" button" class="btn btn-danger" data-bs-toggle="modal" ">
                     Sanitizacion por virus y Bacterias
                 </button>
 
-                <button type=" button" class="btn btn-primary" data-bs-toggle="modal" ">
+                <button type=" button" class="btn btn-danger" data-bs-toggle="modal" ">
                     Piojillo de Palomas
                 </button>
             </div>
@@ -192,41 +186,77 @@
 
                     </div>
             </div>
+        </div>
 
+        <div id="contact-nav" style="min-height: 40vh; display: flex; flex-direction: column;">
+            <div style="align-items: center; flex: 1; justify-content: center; display: flex;">
+                <h1>CONTACTO</h1>
+            </div>
+                
+            <div id= "sixth">
+                <div style="display: flex; justify-content: space-around;" >
+                    <i style=" text-align: center; border-color:transparent;border-width:0px;background-color:#ff8d61;box-sizing:content-box;height:56px;width:56px;line-height:56px;border-radius:50%;color:#ffffff;font-size:28px;margin: 16px;" class="fontawesome-icon fa-map-marker-alt fas circle-yes"></i>
+                    <div >
+                        <p style="font-weight: bold; font-size: 28px;" id="">Dirección</p>
+                        <p id="">fumigadoradeltata@gmail.com</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-around;" >
+                    <i style=" text-align: center; border-color:transparent;border-width:0px;background-color:#ff8d61;box-sizing:content-box;height:56px;width:56px;line-height:56px;border-radius:50%;color:#ffffff;font-size:28px;margin: 16px;" class="fontawesome-icon fa-envelope fas circle-yes"></i>
+                    <div >
+                        <p style="font-weight: bold; font-size: 28px;" id="">E-Mail</p>
+                        <p id="">fumigadoradeltata@gmail.com</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-around;" >
+                    <i style=" text-align: center; border-color:transparent;border-width:0px;background-color:#ff8d61;box-sizing:content-box;height:56px;width:56px;line-height:56px;border-radius:50%;color:#ffffff;font-size:28px;margin: 16px;" class="fontawesome-icon fa-phone fas circle-yes"></i>
+                    <div >
+                        <p style="font-weight: bold; font-size: 28px;" id="">Teléfono</p>
+                        <p id="">fumigadoradeltata@gmail.com</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-around;" >
+                    <i style=" text-align: center; border-color:transparent;border-width:0px;background-color:#ff8d61;box-sizing:content-box;height:56px;width:56px;line-height:56px;border-radius:50%;color:#ffffff;font-size:28px;margin: 16px;" class="fontawesome-icon fa-clock far circle-yes"></i>
+                    <div >
+                        <p style="font-weight: bold; font-size: 28px;" id="">Horarios</p>
+                        <p id="">fumigadoradeltata@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
         <div class="section d-flex justify-content-center align-items-center" id="seventh">
             <form class="container">
-                <h1>Enviar mail</h1>
+                <h1 style="text-align: center; padding-bottom: 10px;">Formulario de Contacto</h1>
 
                 <div class="row justify-content-center">
-                    <div class="mb-3 col-12">
+                    <div class="mb-3 col-6">
                         <input class="form-control" id="contactName" placeholder="Nombre o empresa">
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="mb-3 col-12">
+                    <div class="mb-3 col-6">
                         <input type="email" class="form-control" id="contactEmail" placeholder="Email">
                     </div>
                 </div>
                 <div class=" row justify-content-center">
-                    <div class="mb-3 col-12">
+                    <div class="mb-3 col-6">
                         <input type="number" class="form-control" id="contactPhone" placeholder="Teléfono">
                     </div>
                 </div>
                 <div class=" row justify-content-center">
-                    <div class="mb-3 col-12">
+                    <div class="mb-3 col-6">
                         <input class="form-control" id="contactSubject" placeholder="Asunto">
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="mb-3 col-12">
+                    <div class="mb-3 col-6">
                         <textarea class="form-control" id="contactForm" placeholder="Contenido" rows="10"></textarea>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="mb-3 col-12 d-flex justify-content-end">
+                    <div class="mb-3 col-6 d-flex justify-content-end">
                         <button id="contactSend" onclick="sendMail(event);"
                             class="btn btn-primary w-100">Enviar</button>
                     </div>
@@ -241,7 +271,7 @@
 
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
-            <span class="text-muted">© 2021 Copyright: Rodrigo Tosti S.A.P.O</span>
+            <span class="text-muted">© 2021 Copyright: Fumigadora del Tata</span>
         </div>
     </footer>
 
@@ -437,8 +467,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
+        <script src="https://kit.fontawesome.com/00c461185f.js" crossorigin="anonymous"></script>
     <script>
+        
 
         function showIt(elementId) {
             var el = document.getElementById(elementId);
@@ -485,23 +516,23 @@
                 subject,
                 message,
                 fromEmail: contactEmail,
-                toEmail: 'rodrigo.tosti98@gmail.com' //aca va a ir hardcodeado fumigadoradeltata@gmail.com
+                toEmail: 'fumigadoradeltata@gmail.com' //aca va a ir hardcodeado fumigadoradeltata@gmail.com
             };
 
-            // emailjs
-            //     .send(
-            //         "default_service",
-            //         "template_contacto",
-            //         templateParams
-            //     )
-            //     .then(
-            //         function (response) {
-            //             console.log("SUCCESS!", response.status, response.text);
-            //         },
-            //         function (error) {
-            //             console.log("FAILED...", error);
-            //         }
-            //     );
+            emailjs
+                .send(
+                    "default_service",
+                    "template_contacto",
+                    templateParams
+                )
+                .then(
+                    function (response) {
+                        console.log("SUCCESS!", response.status, response.text);
+                    },
+                    function (error) {
+                        console.log("FAILED...", error);
+                    }
+                );
         };
     </script>
     </script>
