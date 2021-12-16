@@ -63,7 +63,6 @@ html {
 #hero-section{
     min-height: 92vh;
     padding: 10%;
-    padding-top: 14%;
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -80,15 +79,14 @@ html {
 
 #first {
     background-color: #fafafa;
-    padding: 10%;
-    padding-top: 14%;
+    /* padding: 10%; */
+    padding: 4% 10% 10% 10%;
     min-height: 60vh;
 }
 
 #seccond {
     background-color: #81C4D6;
-    padding: 10%;
-    padding-top: 8%;
+    padding: 4% 10% 10% 10%;
     min-height: 60vh;
 
 }
@@ -97,7 +95,8 @@ html {
     background-color: #017291;
     display: flex;
     flex-direction: column;
-    padding-top: 8%;
+    padding-top: 4%;
+    min-height: 70vh;
 }
 
 .carousel-inner-custom {
@@ -124,6 +123,7 @@ html {
     flex-direction: row;
     /* align-items: center; */
     justify-content: space-evenly;
+    padding-top: 0%;
 }
 
 #seventh {
@@ -132,5 +132,5 @@ html {
 }
 
 #contact-nav {
-    padding-top: 8%;
+    padding-top: 4%;
 }
