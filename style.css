@@ -1,17 +1,18 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .service-buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     flex: 1;
 }
 
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer !important;
-  }
+}
 
 .main-color {
     background-color: #5FD9FC;
@@ -23,7 +24,7 @@ html {
 
 .hidden-text-color {
     color: #acc2c8;
-} 
+}
 
 .header-img {
     background: url(images/header.png) no-repeat center;
@@ -31,8 +32,13 @@ html {
     height: 140px;
 }
 
+.bug {
+    background: url(images/1501376681.svg) no-repeat bottom;
+    background-size: contain;
+}
+
 .desinfeccion {
-    background: url(images/mosquito.png) no-repeat bottom;
+    background: url(images/insecto.png) no-repeat bottom;
     background-size: contain;
 }
 
@@ -46,21 +52,36 @@ html {
     background-size: contain;
 }
 
+.bacteria {
+    background: url(images/las-bacterias.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.pigeon {
+    background: url(images/pigeon.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.mosquito {
+    background: url(images/mosquito.png) no-repeat bottom;
+    background-size: contain;
+}
+
 .wp-button {
     height: 70px;
     width: 70px;
     position: fixed;
+    flex-wrap: wrap;
     bottom: 24px;
     right: 15px;
     background: url(images/whatsapp-round-color.svg) no-repeat center center;
-
 }
 
 .subtitle-color {
-    color:#999c9f;
+    color: #999c9f;
 }
 
-#hero-section{
+#hero-section {
     min-height: 92vh;
     padding: 10%;
     display: flex;
@@ -73,7 +94,8 @@ html {
     background-position-y: center;
     background-color: #f2f2f2;
 }
-.section{
+
+.section {
     min-height: 100vh;
 }
 
@@ -88,7 +110,6 @@ html {
     background-color: #81C4D6;
     padding: 4% 10% 10% 10%;
     min-height: 60vh;
-
 }
 
 #third {
@@ -117,13 +138,17 @@ html {
     background-color: rgb(23, 80, 61);
 }
 
+.modal-button {
+    background: #f1faee !important;
+}
+
 #sixth {
     display: flex;
     flex: 1;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-evenly;
     padding-top: 0%;
+    flex-wrap: wrap;
 }
 
 #seventh {
@@ -133,4 +158,61 @@ html {
 
 #contact-nav {
     padding-top: 4%;
+}
+
+.custom-modal {
+    max-width: none !important;
+    width: 50% !important;
+}
+
+@media (min-width:320px) {
+    #hero-section {
+        min-height: 92vh;
+        padding: 10%;
+        padding-top: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+        background-size: contain;
+        background-position-x: left;
+        background-position-y: center;
+        background-color: #f2f2f2;
+    }
+}
+
+@media (min-width:481px) {}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+}
+
+@media only screen and (max-width: 500px) {
+    #hero-section {
+        background: none;
+        background-color: #f2f2f2;
+    }
+    #hero-section {
+        background: none;
+        background-color: #f2f2f2;
+    }
+    #third {
+        min-height: 100vh;
+    }
+    .custom-modal {
+        max-width: none !important;
+        width: inherit !important;
+    }
 }
