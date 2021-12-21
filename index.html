@@ -436,11 +436,13 @@
             }
 
             const subject = `${contactName} - ${contactSubject}`
-            const message = `${contactForm} \n \n DATOS DE CONTACTO: \n NOMBRE: ${contactName} \n TELEFONO: ${contactPhone} \n EMAIL: ${contactEmail}`
 
             var templateParams = {
                 subject,
-                message,
+                message: contactForm,
+                contactName,
+                contactPhone,
+                contactEmail,
                 fromEmail: contactEmail,
                 toEmail: 'fumigadoradeltata@gmail.com'
             };
