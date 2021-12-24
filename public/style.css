@@ -57,7 +57,7 @@ html {
 }
 
 .limpieza {
-    background: url(images/aspiradora.png) no-repeat bottom;
+    background: url(images/tanqueAgua.png) no-repeat bottom;
     background-size: contain;
 }
 
@@ -104,13 +104,29 @@ html {
     background-color: #f2f2f2;
 }
 
+.nav-link-a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #4fd9ff;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.container-fluid {
+    background-color: #f2f2f2;
+}
+.navbar {
+    background-color: #f2f2f2;
+
+}
+
 .section {
     min-height: 100vh;
 }
 
 #first {
     background-color: #fafafa;
-    /* padding: 10%; */
     padding: 4% 10% 10% 10%;
     min-height: 60vh;
 }
@@ -168,6 +184,10 @@ html {
 #contact-nav {
     padding-top: 4%;
 }
+
+a:hover {
+    background-color: rgba(38, 156, 253, 0.096);
+  }
 
 .custom-modal {
     max-width: none !important;

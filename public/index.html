@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <nav class=" navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid bg-light">
             <div style="flex: 1;" class="navbar-brand mb-0 h1 header-img"></div>
             <!-- <img src="images/header2.png" alt=""> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +24,16 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a onclick="showIt('first')" class="nav-link cursor-pointer" aria-current="page">Bienvenidos</a>
+                        <a onclick="showIt('first')" class="nav-link-a cursor-pointer main-color-text" aria-current="page">¿Quiénes somos?</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a onclick="showIt('seccond')" class="nav-link-a cursor-pointer">Nosotros</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a onclick="showIt('third')" class="nav-link-a cursor-pointer">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a onclick="showIt('seccond')" class="nav-link cursor-pointer">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a onclick="showIt('third')" class="nav-link cursor-pointer">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a onclick="showIt('contact-nav')" type="button" class="nav-link cursor-pointer">Contacto</a>
+                        <a onclick="showIt('contact-nav')" type="button" class="nav-link-a cursor-pointer">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -45,10 +45,10 @@
             <h1 class="main-color-text" style="font-size: 282%; margin-bottom: 30px;">Fumigadora del Tata</h1>
             <h3>Desinfección – Desinsectación</h3>
             <h3>Limpieza Y Desinfección De Tanques - Cañerías</h3>
-            <h3>Muestra De Agua</h3>
+            <h3>Muestras De Agua</h3>
         </div>
         <div class="section" id="first">
-            <h1 style="font-size: 300%; margin-bottom: 30px; text-align: center;">Bienvenidos</h1>
+            <h1 style="font-size: 300%; margin-bottom: 30px; text-align: center;">¿Quiénes somos?</h1>
 
             <p style="font-size: 150%;">Fumigadora Del Tata es una empresa joven, en desarrollo y con un nuevo enfoque en la prestación de servicios de sanidad ambiental.</p>
             <p style="font-size: 150%;">Para llevar a cabo nuestros objetivos cumplimos un estricto procedimiento de aplicación de diversos productos el cual lleva, en la mayoría de casos , a la reducción mínima de la plaga o erradicación de la misma, este procedimiento es el <b>M.I.P</b>                (manejo integral de plagas).
@@ -56,14 +56,14 @@
 
 
         </div>
-        <div class="section" id="seccond">
+        <!-- <div class="section" id="seccond">
             <h1 style="font-size: 300%; margin-bottom: 30px; text-align: center; ">Nosotros</h1>
             <p style="font-size: 150%;">Hoy nuestra intención es que su organización pase a formar parte de nuestro listado de clientes. Es por eso que le acercamos esta notificación con la intención de que conozcan nuestro perfil y nuestra empresa en profundidad, y así poder decidir
                 si formaremos o no parte de sus proveedores.</p>
             <p style="font-size: 150%;">Tenemos el agrado de dirigirnos a Uds., a efectos de ponerle en conocimiento y en detalle la metodología a llevar a cabo en cada una de las aplicaciones a realizar en vuestro establecimiento, donde realizaremos nuestros servicios. A continuación
                 se detallan diversas variantes de aplicaciones. Las mismas se llevaran a cabo según recomendaciones del departamento técnico.</p>
 
-        </div>
+        </div> -->
         <div class="section" id="third">
             <h1 style="font-size: 300%; margin-bottom: 30px; text-align: center; ">Servicios</h1>
             <div class="service-buttons service-buttons-with-modal">
@@ -77,14 +77,14 @@
                 <div class="service-icon-div" style="display: flex; flex-direction: column;">
                     <div class="desratacion" style="height: 60px; margin-bottom: 10px;"></div>
                     <button type="button" class="btn modal-button" data-bs-toggle="modal" data-bs-target="#modal2">
-                        Desratizacion
+                        Desratización
                     </button>
                 </div>
                 <div class="service-icon-div" style="display: flex; flex-direction: column;">
                     <div class="limpieza" style="height: 60px; margin-bottom: 10px;">
                     </div>
                     <button type="button" class="btn modal-button" data-bs-toggle="modal" data-bs-target="#modal3">
-                        Limpieza
+                        Limpieza de tanque
                     </button>
                 </div>
             </div>
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div id="contact-nav" style="min-height: 40vh; display: flex; flex-direction: column;">
+        <div id="contact-nav" class= "bg-light"style="min-height: 40vh; display: flex; flex-direction: column;">
             <div style="align-items: center; flex: 1; justify-content: center; display: flex;">
                 <h1>CONTACTO</h1>
             </div>
@@ -298,11 +298,11 @@
         <div class="modal-dialog custom-modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Desratizacion</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Desratización</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h1 class="main-color-text">Desratizacion</h1>
+                    <h1 class="main-color-text">Desratización</h1>
                     <span class="carousel-inner-custom-description" style="color: black;">
                         Se colocaran estaciones de cebado debidamente enumeradas de forma perimetral, en
                         lugares
@@ -334,11 +334,11 @@
         <div class="modal-dialog custom-modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Limpieza</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Limpieza de tanque</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h1 class="main-color-text">Limpieza</h1>
+                    <h1 class="main-color-text">Limpieza de tanque</h1>
                     <ol style="color: black;">
                         <li>
                             <span class="carousel-inner-custom-description">
